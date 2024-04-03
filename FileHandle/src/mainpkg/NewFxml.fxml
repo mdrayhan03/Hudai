@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.NewFxmlController">
+   <children>
+      <TableView fx:id="personTableView" prefHeight="315.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="fNTableColumn" prefWidth="200.0" text="First Name" />
+          <TableColumn fx:id="lNTableColumn" prefWidth="200.0" text="Last Name" />
+            <TableColumn fx:id="cgpaTableColumn" prefWidth="198.0" text="CGPA" />
+        </columns>
+      </TableView>
+      <Button layoutY="341.0" mnemonicParsing="false" onAction="#textFileButton" prefHeight="55.0" prefWidth="200.0" text="Text File" />
+      <Button layoutX="200.0" layoutY="341.0" mnemonicParsing="false" onAction="#dataFileButton" prefHeight="55.0" prefWidth="200.0" text="Data File" />
+      <Button layoutX="400.0" layoutY="341.0" mnemonicParsing="false" onAction="#objectFileButton" prefHeight="55.0" prefWidth="200.0" text="Object File" />
+   </children>
+</AnchorPane>

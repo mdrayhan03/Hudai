@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label layoutX="30.0" layoutY="31.0" text="First Name" />
+      <Label layoutX="30.0" layoutY="61.0" text="Last Name" />
+      <Label layoutX="30.0" layoutY="92.0" text="CGPA" />
+      <TextField fx:id="firstNameTextField" layoutX="126.0" layoutY="26.0" />
+      <TextField fx:id="lastNameTextField" layoutX="126.0" layoutY="56.0" />
+      <TextField fx:id="cgpaTextField" layoutX="126.0" layoutY="87.0" />
+      <Label fx:id="showLabel" alignment="CENTER" layoutX="350.0" layoutY="13.0" prefHeight="106.0" prefWidth="235.0" text="Label" wrapText="true" />
+      <Button layoutX="213.0" layoutY="126.0" mnemonicParsing="false" onAction="#addPersonButton" prefWidth="200.0" text="Add Person" />
+      <Button layoutY="163.0" mnemonicParsing="false" onAction="#textFileButton" prefWidth="200.0" text="Text File" />
+      <Button layoutX="200.0" layoutY="163.0" mnemonicParsing="false" onAction="#dataBinButton" prefWidth="200.0" text="Data Bin File" />
+      <Button layoutX="400.0" layoutY="163.0" mnemonicParsing="false" onAction="#objectButton" prefWidth="200.0" text="Object Bin FIle" />
+      <TableView fx:id="personTableView" layoutY="200.0" prefHeight="200.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="fNTableColumn" prefWidth="200.0" text="First Name" />
+          <TableColumn fx:id="lNTableColumn" prefWidth="200.0" text="Last Name" />
+            <TableColumn fx:id="cgpaTableColumn" prefWidth="198.0" text="CGPA" />
+        </columns>
+      </TableView>
+      <Button layoutX="457.0" layoutY="126.0" mnemonicParsing="false" onAction="#showFileButton" text="Show File" />
+    </children>
+</AnchorPane>
